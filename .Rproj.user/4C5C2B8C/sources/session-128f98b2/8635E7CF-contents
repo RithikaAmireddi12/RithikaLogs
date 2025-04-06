@@ -1,0 +1,38 @@
+---
+title: "Rithika_blog"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+title-block-banner: true
+---
+
+<style>
+/* Make the top banner pink without external CSS */
+.quarto-title-block.default .quarto-title-banner {
+  background: linear-gradient(to right, #ffcee0, #ffe5f0) !important;
+  color: #b03060 !important;
+  border-bottom: 2px solid #f8cce9;
+  box-shadow: 0 8px 20px rgba(255, 192, 203, 0.3);
+}
+
+.navbar {
+  background: pink
+}
+
+.quarto-title-banner .title {
+  color: #d63384 !important;
+}
+
+.quarto-title-banner .subtitle {
+  color: #94476b !important;
+}
+</style>
+
+Welcome to my blog! Here you’ll find my thoughts, projects, and creative explorations 🌸
+
+---

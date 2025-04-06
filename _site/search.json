@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "posts/Garden/Garden.html",
+    "href": "posts/Garden/Garden.html",
+    "title": "Garden",
+    "section": "",
+    "text": "Welcome to the garden 🌼🌸🌺\n\n\n\n\nThis generative artwork is a symbolic journey through the natural cycle of life and death, conveyed through a dynamic weather-to-nature transition and mathematical floral growth.\n\n\nIt begins with a storm, a metaphor for chaos, fear, and the inevitable forces of time. Heavy clouds roam, rain lashes down, and flashes of lightning tear the sky—suggesting the unpredictable onset of life or the turbulence near death. The environment is dark, uncertain, and moving.\n\n\nThen, a transition unfolds. Light slowly returns as the storm fades. The sun rises, illuminating a world now teeming with growth. Grass, ferns, and flowers bloom using parametric equations—life structured through nature’s mathematical order. Butterflies emerge, fluttering in soft figure-eights, symbolizing rebirth, fragility, and fleeting joy.\n\n\nThe dandelion appears last—a poignant symbol of both life and impermanence. Initially grounded, it transitions into its “blown” state. It’s the final breath, the quiet release, but also a beginning for new life elsewhere.\n\n\nEach flower, each motion, each particle serves as a visual metaphor:\n\n\n\nThe storm for hardship and the unknown.\n\n\nThe sunlight and bloom for life, hope, and becoming.\n\n\nThe dandelion seeds for decay, remembrance, and return.\n\n\n\nIn this piece, death is not an end—it is a transition, as natural and necessary as a storm giving way to sun. Life, in turn, is brief, beautiful, and blooming—always on the verge of letting go.\n\n\n\n\n\n\n\n\n\n\n\n\nButterfly’s movement follows a figure-eight trajectory, which can be modeled using sine and cosine functions:\n\nx(t) = A·cos(ωₓ·t)\ny(t) = B·sin(ωᵧ·t)\n  \n\nThese functions create smooth, looping motion—just like how real butterflies flutter rather than flying straight. Each butterfly has a slightly different frequency (ω), making its motion unique.\n\n\nTo keep them from flying off too far, we constrain their range:\n\nx ∈ [x₀ − dₓ, x₀ + dₓ]\ny ∈ [y₀ − dᵧ, y₀ + dᵧ]\n  \n\nThis ensures they stay within a specific area, rather than wandering infinitely.\n\n\n\n\n\n\n\n\nDandelions and seed dispersal use polar coordinates to arrange seeds in a circular pattern:\n\nx = r·cos(θ)\ny = r·sin(θ)\n  \n\nHere, r is the radius and θ the angle—this evenly spaces seeds around the center.\n\n\nTo animate the dandelion blooming, we apply a scaling transformation:\n\nS(t) = [\n  sx(t)   0\n   0    sy(t)\n]\n  \n\nWhere sx and sy scale the flower’s size based on bloom progress.\n\n\nThe seeds don’t remain static—they sway gently with the wind:\n\nx_seed = x₀ + A·sin(ω·t)\n  \n\nThis adds life and movement, as if the seeds are truly floating away."
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Rithika_blog",
+    "section": "",
+    "text": "Welcome to my blog! Here you’ll find my thoughts, projects, and creative explorations 🌸\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGarden\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n  \n\n\n\n\nPost With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nApr 4, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nApr 1, 2025\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  }
+]
