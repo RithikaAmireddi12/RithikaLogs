@@ -6,6 +6,7 @@ format:
 page-layout: full
 ---
 
+```{=html}
 <style>
   body {
     background: white;
@@ -44,93 +45,114 @@ page-layout: full
     max-width: 100%;
   }
 </style>
+```
+::: garden-header
+<h1>Welcome to the garden 🌼🌸🌺</h1>
+:::
 
-<div class="garden-header">
-  <h1>Welcome to the garden 🌼🌸🌺</h1>
-</div>
+::: description
+<p><strong>This generative artwork is a symbolic journey through the natural cycle of life and death, conveyed through a dynamic weather-to-nature transition and mathematical floral growth.</strong></p>
 
-<div class="description">
-  <p><strong>This generative artwork is a symbolic journey through the natural cycle of life and death, conveyed through a dynamic weather-to-nature transition and mathematical floral growth.</strong></p>
+<p>It begins with a storm, a metaphor for chaos, fear, and the inevitable forces of time. Heavy clouds roam, rain lashes down, and flashes of lightning tear the sky---suggesting the unpredictable onset of life or the turbulence near death. The environment is dark, uncertain, and moving.</p>
 
-  <p>It begins with a storm, a metaphor for chaos, fear, and the inevitable forces of time. Heavy clouds roam, rain lashes down, and flashes of lightning tear the sky—suggesting the unpredictable onset of life or the turbulence near death. The environment is dark, uncertain, and moving.</p>
+<p>Then, a transition unfolds. Light slowly returns as the storm fades. The sun rises, illuminating a world now teeming with growth. Grass, ferns, and flowers bloom using parametric equations---life structured through nature's mathematical order. Butterflies emerge, fluttering in soft figure-eights, symbolizing rebirth, fragility, and fleeting joy.</p>
 
-  <p>Then, a transition unfolds. Light slowly returns as the storm fades. The sun rises, illuminating a world now teeming with growth. Grass, ferns, and flowers bloom using parametric equations—life structured through nature’s mathematical order. Butterflies emerge, fluttering in soft figure-eights, symbolizing rebirth, fragility, and fleeting joy.</p>
+<p>The dandelion appears last---a poignant symbol of both life and impermanence. Initially grounded, it transitions into its "blown" state. It's the final breath, the quiet release, but also a beginning for new life elsewhere.</p>
 
-  <p>The dandelion appears last—a poignant symbol of both life and impermanence. Initially grounded, it transitions into its "blown" state. It’s the final breath, the quiet release, but also a beginning for new life elsewhere.</p>
+<p><strong>Each flower, each motion, each particle serves as a visual metaphor:</strong></p>
 
-  <p><strong>Each flower, each motion, each particle serves as a visual metaphor:</strong></p>
+<ul>
 
-  <ul>
-    <li>The storm for hardship and the unknown.</li>
-    <li>The sunlight and bloom for life, hope, and becoming.</li>
-    <li>The dandelion seeds for decay, remembrance, and return.</li>
-  </ul>
+<li>The storm for hardship and the unknown.</li>
 
-  <p>In this piece, death is not an end—it is a transition, as natural and necessary as a storm giving way to sun. Life, in turn, is brief, beautiful, and blooming—always on the verge of letting go.</p>
-</div>
+<li>The sunlight and bloom for life, hope, and becoming.</li>
+
+<li>The dandelion seeds for decay, remembrance, and return.</li>
+
+</ul>
+
+<p>In this piece, death is not an end---it is a transition, as natural and necessary as a storm giving way to sun. Life, in turn, is brief, beautiful, and blooming---always on the verge of letting go.</p>
+:::
 
 ::: {#p5-container}
-<iframe src="https://editor.p5js.org/rithika.amireddi.12/sketches/4BqUXNgx1" width="800px" height="600px"></iframe>
+<iframe src="https://editor.p5js.org/rithika.amireddi.12/sketches/4BqUXNgx1" width="800px" height="600px">
+
+</iframe>
 :::
 
 ::: {#p5-editor}
-<iframe src="https://editor.p5js.org/rithika.amireddi.12/sketches/oJkgRNeHa" width="600px" height="600px"></iframe>
+<iframe src="https://editor.p5js.org/rithika.amireddi.12/sketches/oJkgRNeHa" width="600px" height="600px">
+
+</iframe>
 :::
 
-<div style="max-width: 700px; margin: 2rem auto; text-align: left;">
-  <p><strong>Butterfly’s movement</strong> follows a figure-eight trajectory, which can be modeled using sine and cosine functions:</p>
+::: {style="max-width: 700px; margin: 2rem auto; text-align: left;"}
+<p><strong>Butterfly's movement</strong> follows a figure-eight trajectory, which can be modeled using sine and cosine functions:</p>
 
-  <pre>
+```{=html}
+<pre>
 x(t) = A·cos(ωₓ·t)
 y(t) = B·sin(ωᵧ·t)
   </pre>
+```
+<p>These functions create smooth, looping motion---just like how real butterflies flutter rather than flying straight. Each butterfly has a slightly different frequency (ω), making its motion unique.</p>
 
-  <p>These functions create smooth, looping motion—just like how real butterflies flutter rather than flying straight. Each butterfly has a slightly different frequency (ω), making its motion unique.</p>
+<p>To keep them from flying off too far, we constrain their range:</p>
 
-  <p>To keep them from flying off too far, we constrain their range:</p>
-
-  <pre>
+```{=html}
+<pre>
 x ∈ [x₀ − dₓ, x₀ + dₓ]
 y ∈ [y₀ − dᵧ, y₀ + dᵧ]
   </pre>
-
-  <p>This ensures they stay within a specific area, rather than wandering infinitely.</p>
-</div>
-
-::: {#p5-editor}
-<iframe src="https://editor.p5js.org/rithika.amireddi.12/sketches/G2SWahpMH" width="600px" height="600px"></iframe>
+```
+<p>This ensures they stay within a specific area, rather than wandering infinitely.</p>
 :::
 
-<div style="max-width: 700px; margin: 2rem auto; text-align: left;">
-  <p><strong>Dandelions and seed dispersal</strong> use polar coordinates to arrange seeds in a circular pattern:</p>
+<div>
 
-  <pre>
+<iframe src="https://editor.p5js.org/rithika.amireddi.12/sketches/G2SWahpMH" width="600px" height="600px">
+
+</iframe>
+
+</div>
+
+::: {style="max-width: 700px; margin: 2rem auto; text-align: left;"}
+<p><strong>Dandelions and seed dispersal</strong> use polar coordinates to arrange seeds in a circular pattern:</p>
+
+```{=html}
+<pre>
 x = r·cos(θ)
 y = r·sin(θ)
   </pre>
+```
+<p>Here, <code>r</code> is the radius and <code>θ</code> the angle---this evenly spaces seeds around the center.</p>
 
-  <p>Here, <code>r</code> is the radius and <code>θ</code> the angle—this evenly spaces seeds around the center.</p>
+<p>To animate the dandelion blooming, we apply a scaling transformation:</p>
 
-  <p>To animate the dandelion blooming, we apply a scaling transformation:</p>
-
-  <pre>
+```{=html}
+<pre>
 S(t) = [
   sx(t)   0
    0    sy(t)
 ]
   </pre>
+```
+<p>Where <code>sx</code> and <code>sy</code> scale the flower's size based on bloom progress.</p>
 
-  <p>Where <code>sx</code> and <code>sy</code> scale the flower’s size based on bloom progress.</p>
+<p>The seeds don't remain static---they sway gently with the wind:</p>
 
-  <p>The seeds don’t remain static—they sway gently with the wind:</p>
-
-  <pre>
+```{=html}
+<pre>
 x_seed = x₀ + A·sin(ω·t)
   </pre>
-
-  <p>This adds life and movement, as if the seeds are truly floating away.</p>
-</div>
-
-::: {#p5-editor}
-<iframe src="https://editor.p5js.org/rithika.amireddi.12/sketches/z-NR607oI"width="600px" height="600px"></iframe>
+```
+<p>This adds life and movement, as if the seeds are truly floating away.</p>
 :::
+
+<div>
+
+<iframe src="https://editor.p5js.org/rithika.amireddi.12/sketches/z-NR607oI" width="600px" height="600px">
+
+</iframe>
+
+</div>

@@ -1,16 +1,17 @@
 ---
 title: "Rithika_blog"
-listing:
+listing: 
   contents: posts
   sort: "date desc"
   type: default
-  categories: true
   sort-ui: false
   filter-ui: false
+  categories: false
 page-layout: full
 title-block-banner: true
 ---
 
+```{=html}
 <style>
 /* Make the top banner pink without external CSS */
 .quarto-title-block.default .quarto-title-banner {
@@ -21,7 +22,7 @@ title-block-banner: true
 }
 
 .navbar {
-  background: pink
+  background: pink;
 }
 
 .quarto-title-banner .title {
@@ -32,7 +33,7 @@ title-block-banner: true
   color: #94476b !important;
 }
 </style>
+```
+Welcome to my blog! Here you'll find my thoughts, projects, and creative explorations 🌸
 
-Welcome to my blog! Here you’ll find my thoughts, projects, and creative explorations 🌸
-
----
+------------------------------------------------------------------------

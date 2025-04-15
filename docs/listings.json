@@ -2,9 +2,8 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/Garden/Garden.html",
-      "/posts/post-with-code/index.html",
-      "/posts/welcome/index.html"
+      "/posts/Garden/mudra-detection.html",
+      "/posts/Garden/Garden.html"
     ]
   }
 ]

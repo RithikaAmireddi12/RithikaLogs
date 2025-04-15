@@ -1,0 +1,79 @@
+---
+title: "Mudra Detection"
+format: html
+page-layout: full
+css: styles.css
+---
+
+<style>
+  body {
+    background: white;
+    font-family: 'Segoe UI', sans-serif;
+    color: #5c3a53;
+    text-align: center;
+    padding: 2rem;
+    margin: 0;
+  }
+
+  .mudra-header {
+    background: linear-gradient(to right, #ffcee0, #ffe5f0);
+    padding: 2rem;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 20px rgba(255, 192, 203, 0.3);
+  }
+
+  .description {
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+    padding: 20px;
+    background: rgba(255, 206, 224, 0.2);
+    border-left: 5px solid #ff88aa;
+    border-radius: 12px;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  #p5-container iframe {
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    margin-top: 1.5rem;
+    max-width: 100%;
+  }
+</style>
+
+<div class="mudra-header">
+  <h1>Mudra Detection with Sound</h1>
+</div>
+
+<div class="description">
+  **Goal:** Build a browser-based mudra recognition system using webcam input that plays a musical raga based on the recognized hand gesture.
+
+  **Input:** Live webcam feed  
+  **Output:** Audio playback of a corresponding Indian classical raga  
+
+  **Tools & Libraries:**
+  - p5.js for visuals and webcam  
+  - ml5.js (Handpose model + Neural Network classifier)  
+  - p5.sound for audio playback  
+
+  **Recognition Targets:** 5 custom mudras (hand gestures), each mapped to a different raga.
+</div>
+
+<div id="p5-container">
+  <iframe src="https://editor.p5js.org/rithika.amireddi.12/full/f69Vm3fAj6" width="800px" height="600px"></iframe>
+</div>
+
+## Training and Prediction Interface
+
+<div style="text-align: center; margin-bottom: 1rem;">
+  <a href="https://mudra-chittaswaram-classifier.netlify.app" target="_blank"
+     style="background: #ffcee0; color: #b03060; padding: 10px 20px; text-decoration: none; border-radius: 10px; box-shadow: 0 4px 10px rgba(255, 192, 203, 0.3); font-weight: bold;">
+    Open Fullscreen in New Tab
+  </a>
+</div>
+
+<iframe src="https://mudra-chittaswaram-classifier.netlify.app" width="100%" height="600px"
+        style="border: none; border-radius: 16px; box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);"></iframe>
