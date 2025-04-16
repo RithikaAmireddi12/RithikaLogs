@@ -77,3 +77,48 @@ css: styles.css
 
 <iframe src="https://mudra-chittaswaram-classifier.netlify.app" width="100%" height="600px"
         style="border: none; border-radius: 16px; box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);"></iframe>
+        
+## Mudra Model Project Flow
+
+<div class="description">
+
+### Dataset Creation
+
+- Collected hand pose images showing different mudras using both left and right hands.
+- Extracted 21 hand keypoints per image (x, y coordinates) using a hand-tracking model.
+- Stored data in a CSV format: 42 columns for keypoints + 1 column for output label (`Mudra_Hand` format, e.g., `Mayura_L`).
+
+### Data Validation
+
+- Checked for missing or inaccurately plotted keypoints.
+- Ensured correct label formatting and consistency across rows.
+- Identified class imbalance (e.g., fewer samples of katakamukha) and fixed it.
+- Ran data through ChatGPT for quality feedback.
+
+### Model Training
+
+- Used the formatted CSV to train a neural network model.
+- Monitored loss values to track model learning.
+- Saved trained models as `.json` and `.bin` files.
+
+### Model Testing
+
+- Tested the model with new hand keypoint data to verify predictions.
+- Observed inconsistencies across browsers (e.g., the model worked on Firefox but not Chrome).
+- Discovered potential issues with model file parsing and incorrect predictions.
+
+### Debugging Phase
+
+- Identified possible causes like:
+  - Invalid or corrupted weight files
+  - Incorrect CSV formatting (e.g., confusion between one output column vs. two)
+  - Heavy or skipped images during preprocessing
+- Noted that katakamukha images may have been bypassed due to tracking failures.
+
+### Next Steps
+
+- Debugged the image-to-CSV converter script to ensure no images are skipped.
+- Finalised the prediction algorithm and integrated it with Chitta Swarams for real-time interaction.
+
+</div>
+

@@ -7,6 +7,13 @@
     "text": "Training and Prediction Interface\n\n Open Fullscreen in New Tab"
   },
   {
+    "objectID": "posts/Garden/mudra-detection.html#mudra-model-project-flow",
+    "href": "posts/Garden/mudra-detection.html#mudra-model-project-flow",
+    "title": "Mudra Detection",
+    "section": "Mudra Model Project Flow",
+    "text": "Mudra Model Project Flow\n\n\nDataset Creation\n\nCollected hand pose images showing different mudras using both left and right hands.\nExtracted 21 hand keypoints per image (x, y coordinates) using a hand-tracking model.\nStored data in a CSV format: 42 columns for keypoints + 1 column for output label (Mudra_Hand format, e.g., Mayura_L).\n\n\n\nData Validation\n\nChecked for missing or inaccurately plotted keypoints.\nEnsured correct label formatting and consistency across rows.\nIdentified class imbalance (e.g., fewer samples of katakamukha) and fixed it.\nRan data through ChatGPT for quality feedback.\n\n\n\nModel Training\n\nUsed the formatted CSV to train a neural network model.\nMonitored loss values to track model learning.\nSaved trained models as .json and .bin files.\n\n\n\nModel Testing\n\nTested the model with new hand keypoint data to verify predictions.\nObserved inconsistencies across browsers (e.g., the model worked on Firefox but not Chrome).\nDiscovered potential issues with model file parsing and incorrect predictions.\n\n\n\nDebugging Phase\n\nIdentified possible causes like:\n\nInvalid or corrupted weight files\nIncorrect CSV formatting (e.g., confusion between one output column vs. two)\nHeavy or skipped images during preprocessing\n\nNoted that katakamukha images may have been bypassed due to tracking failures.\n\n\n\nNext Steps\n\nDebugged the image-to-CSV converter script to ensure no images are skipped.\nFinalised the prediction algorithm and integrated it with Chitta Swarams for real-time interaction."
+  },
+  {
     "objectID": "posts/Garden/Garden.html",
     "href": "posts/Garden/Garden.html",
     "title": "Garden",
