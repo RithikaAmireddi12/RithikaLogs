@@ -88,12 +88,37 @@ css: styles.css
 - Extracted 21 hand keypoints per image (x, y coordinates) using a hand-tracking model.
 - Stored data in a CSV format: 42 columns for keypoints + 1 column for output label (`Mudra_Hand` format, e.g., `Mayura_L`).
 
+<div id="p5-container">
+  <iframe src="https://editor.p5js.org/rithika.amireddi.12/full/ffg8KrR8a" width="600px" height="400px"></iframe>
+</div>
+
+<p style="max-width: 700px; margin: 1rem auto; text-align: center; font-size: 1rem;">
+  <em>This Python script renames randomly named files into a sequential order with meaningful tags for better organization and clarity.</em>
+</p>
+
+<div id="p5-container">
+  <iframe src="https://editor.p5js.org/rithika.amireddi.12/full/ffg8KrR8a" width="600px" height="400px"></iframe>
+</div>
+
+<p style="max-width: 700px; margin: 1rem auto; text-align: center; font-size: 1rem;">
+  <em>This Python script creates a JSON file listing only the image filenames in the folder, reducing the processing load on the JavaScript side by avoiding the need to scan the image directory.</em>
+</p>
+
+<iframe src="https://editor.p5js.org/rithika.amireddi.12/full/ffg8KrR8a" width="600" height="400" style="border:none;"></iframe><p style="max-width:800px;margin:1rem auto;text-align:center;">This p5.js script loads mudra images, detects hand keypoints using ml5.js, extracts (x, y) coordinates, and saves them to a CSV for model training.</p>
+
+
 ### Data Validation
 
 - Checked for missing or inaccurately plotted keypoints.
 - Ensured correct label formatting and consistency across rows.
 - Identified class imbalance (e.g., fewer samples of katakamukha) and fixed it.
 - Ran data through ChatGPT for quality feedback.
+
+<iframe src="https://editor.p5js.org/rithika.amireddi.12/full/ffg8KrR8a" width="600" height="400" style="border:none;"></iframe>
+<p style="max-width:800px;margin:1rem auto;text-align:center;">
+ This code ensures that the list of files in the fileList.json is fully synchronized with the actual image directory (Mudras_Compiled/). It checks each filename from the JSON file to verify that the corresponding image file exists in the directory. If any files are missing, they are logged as a warning; otherwise, a success message is displayed, confirming that all files are present and accounted for.
+</p>
+
 
 ### Model Training
 
